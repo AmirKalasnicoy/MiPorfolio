@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+:root{
+    --bg-black-900:#F5F7FA;/*Fondo principal*/
+    --bg-black-100:#E4E7EB;/*Fondo secundario*/
+    --bg-black-50:#5B9BD5;/*botones o enlaces*/
+    --text-black-900:#2E3A59;/*texto principal*/
+    --text-black-700:#52616A;/*texto secundario*/
+}
+body{
+    margin:0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Roboto", serif;
+}
+
+ul{
+    list-style: none;
+}
+
+
+section{
+    background-color: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    position: fixed;
+    left: 270px;
+    top: 0;
+    right: 0;
+    opacity: 1;
+    z-index: 0;
+    
+}
+
+.aside-container{
+    width: 250px;
+    background-color: var(--bg-black-100);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-container .logo{
+    position:absolute;
+    top:50px;
+    font-size: 30px;
+    text-transform: capitalize;
+
+}
+
+.aside-container .logo a{
+    color:var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 23px;
+    letter-spacing: 3px;
+    position: relative;
+}
+.aside-container .logo a span{
+    font-family: "Jersey 15", serif;
+    font-size: 30px;
+    font-style: normal;
+    color:#3252a4
+}
+
+.aside-container .logo a::before{
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 3.5px solid var(--bg-black-50);
+    border-left: 3.5px solid var(--bg-black-50);
+    bottom: 0;
+    left: 0;
+}
+.aside-container .logo a::after{
+    content: ' ';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 3.5px solid var(--bg-black-50);
+    border-right: 3.5px solid var(--bg-black-50);
+    top:0;
+    right: 0;
+}
+
+.aside-container .nav{
+    margin-top: 50px;
+}
+
+.aside-container .nav li{
+    margin-top: 20px;
+    display: block;
+}
+
+.aside-container .nav li a{
+    font-family: "Jersey 15", serif;
+    font-weight: 500;
+    border-bottom: 0.6px solid var(--bg-black-50);
+    display: block;
+    color: var(--text-black-900);
+    padding:10px;
+    
+}
