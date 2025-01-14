@@ -47,6 +47,7 @@ section{
     z-index: 10;
     height: 100%;
     padding: 25px;
+    border-right: 1px solid var(--bg-black-50);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +87,7 @@ section{
     left: 0;
 }
 .aside-container .logo a::after{
-    content: ' ';
+    content: '';
     position: absolute;
     width: 20px;
     height: 20px;
@@ -94,6 +95,47 @@ section{
     border-right: 3.5px solid var(--bg-black-50);
     top:0;
     right: 0;
+}
+
+.aside-container .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border:1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top:20px;
+    border-radius: 5px;
+    background-color: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.aside-container .nav-toggler span{
+    height: 2px;
+    width: 18px;
+    background-color:#3252a4 ;
+    display: inline-block;
+    position:relative;
+}
+
+.aside-container .nav-toggler span::before{
+    content:'';
+    height: 2px;
+    width: 18px;
+    background-color: #3252a4;
+    position:absolute;
+    top: -6px;
+    left: 0;
+}
+.aside-container .nav-toggler span::after{
+    content:'';
+    height: 2px;
+    width: 18px;
+    background-color: #3252a4;
+    position:absolute;
+    top: 6px;
+    left: 0;
 }
 
 .aside-container .nav{
@@ -111,6 +153,15 @@ section{
     border-bottom: 0.6px solid var(--bg-black-50);
     display: block;
     color: var(--text-black-900);
-    padding:10px;
+    padding:5px 15px;
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.aside-container .nav li a.activado{
+    color: #3252a4;
+}
+
+.aside-container .nav li a i{
+    margin-right: 15px;
     
 }
